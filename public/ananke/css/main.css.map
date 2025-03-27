@@ -1,11 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-<<<<<<< HEAD
-	"sourceRoot": "/Volumes/Macintosh HD/System/Volumes/Data/Users/mnb.pnz/Sites/HP/art/myblog",
-=======
 	"sourceRoot": "/Users/mnb.pnz/Documents/Documents/portfolio",
->>>>>>> 39ece31 (Add first working post)
 	"sources": [
 		"ananke/css/main.css"
 	],

@@ -2,11 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on btnb/portfolio</title>
-    <link>https://art.btnb.jp/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on btnb/portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://art.btnb.jp/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Mar 2025 12:00:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello, world!</title>
+      <link>http://localhost:1313/posts/hello/</link>
+      <pubDate>Wed, 26 Mar 2025 12:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/hello/</guid>
+      <description>&lt;p&gt;これは最初のHugoブログ記事です！🎉&lt;/p&gt;&#xA;&lt;p&gt;ここは好きに書き換えてOK！&lt;br&gt;&#xA;マークダウンで文章が書けるので、&lt;strong&gt;太字&lt;/strong&gt;や &lt;a href=&#34;https://example.com&#34;&gt;リンク&lt;/a&gt; も使えるよ！&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;箇条書きもできるし&lt;/li&gt;&#xA;&lt;li&gt;絵文字も 🐉🔥🎨&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;ではでは、良いブログライフを〜〜！&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

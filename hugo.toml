@@ -1,4 +1,7 @@
 baseURL = 'https://art.btnb.jp/'
-languageCode = 'en-us'
-title = 'btnb/portfolio'
+languageCode = "ja"
+title = "My Hugo Blog"
 theme = "ananke"
+
+[pagination]
+  pagerSize = 10

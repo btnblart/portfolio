@@ -1,10 +1,6 @@
 backend:
   name: github
-<<<<<<< HEAD
-  repo: btnblart/portfolio
-=======
-  repo: btnblart/portfolio  # ここに自分のGitHubリポジトリ名を入力
->>>>>>> 39ece31 (Add first working post)
+  repo: btnblart/portfolio  # ←自分のGitHubリポジトリに置き換えてね
   branch: main
 
 media_folder: "static/images"
@@ -17,11 +13,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
-<<<<<<< HEAD
-
-=======
->>>>>>> 39ece31 (Add first working post)
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }

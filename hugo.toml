@@ -1,0 +1,4 @@
+baseURL = 'https://art.btnb.jp/'
+languageCode = 'en-us'
+title = 'btnb/portfolio'
+theme = "ananke"

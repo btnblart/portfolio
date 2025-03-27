@@ -1,0 +1,4 @@
+baseURL = "/"
+languageCode = "ja-jp"
+title = "My Hugo Site"
+theme = "ananke"

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+<<<<<<< HEAD
+    <title>btnb/portfolio</title>
+    <link>https://art.btnb.jp/</link>
+    <description>Recent content on btnb/portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://art.btnb.jp/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <title>My Hugo Site</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on My Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Thu, 27 Mar 2025 12:35:16 +0900</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>001</title>
+      <link>//localhost:1313/post/001/</link>
+      <pubDate>Thu, 27 Mar 2025 12:35:16 +0900</pubDate>
+      <guid>//localhost:1313/post/001/</guid>
+      <description>&lt;p&gt;わわわわー&lt;/p&gt;</description>
+    </item>
+>>>>>>> 39ece31 (Add first working post)
+  </channel>
+</rss>

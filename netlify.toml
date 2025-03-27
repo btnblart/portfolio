@@ -5,3 +5,8 @@
 [build.environment]
   HUGO_VERSION = "0.145.0"
   GIT_SUBMODULE_STRATEGY = "recursive"
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200

@@ -1,7 +1,9 @@
-baseURL = 'https://art.btnb.jp/'
-languageCode = "ja"
-title = "My Hugo Blog"
-theme = "ananke"
+---
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
+image: /images/sample.jpg
+---
 
-[pagination]
-  pagerSize = 10
+## 見出し
+
+ここに本文を書く！

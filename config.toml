@@ -1,9 +1,20 @@
----
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-image: /images/sample.jpg
----
+baseURL = "https://btnb.netlify.app/" # ←あなたのURLに変更してOK
+languageCode = "ja"
+title = "My Hugo Site"
+theme = "ananke"
+enableRobotsTXT = true
+paginate = 10
 
-## 見出し
+[params]
+  author = "カイヌシ"
+  favicon = "images/favicon.ico"
+  description = "これはHugo + Anankeで作られたサイトです。"
 
-ここに本文を書く！
+[markup]
+  defaultMarkdownHandler = "goldmark"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[permalinks]
+  posts = "/posts/:slug/"

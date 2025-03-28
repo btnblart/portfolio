@@ -3,14 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <title>Netlify CMS</title>
-    <script src="https://unpkg.com/netlify-cms-app@^2.15.0/dist/netlify-cms-app.js"></script>
   </head>
   <body>
     <div id="nc-root"></div>
+
+    <!-- ↓こっちのCDNのほうが安定してる -->
+    <script src="https://unpkg.com/netlify-cms@^2.10.192/dist/netlify-cms.js"></script>
     <script>
       window.CMS_MANUAL_INIT = true;
-      window.addEventListener('load', function () {
-        NetlifyCmsApp.init();
+      window.addEventListener("load", function () {
+        if (typeof CMS !== "undefined") {
+          CMS.init();
+        } else {
+          console.error("CMS is not defined");
+        }
       });
     </script>
   </body>

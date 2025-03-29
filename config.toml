@@ -1,6 +1,6 @@
 baseURL = "https://btnb.netlify.app/" # ←あなたのURLに変更してOK
 languageCode = "ja"
-title = "My Hugo Site"
+title = "btnb/portfolio"
 theme = "ananke"
 enableRobotsTXT = true
 
@@ -8,7 +8,7 @@ enableRobotsTXT = true
   pagerSize = 10
 
 [params]
-  author = "カイヌシ"
+  author = "彩まそほ"
   favicon = "images/favicon.ico"
   description = "これはHugo + Anankeで作られたサイトです。"
 

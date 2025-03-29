@@ -3,7 +3,9 @@ languageCode = "ja"
 title = "My Hugo Site"
 theme = "ananke"
 enableRobotsTXT = true
-paginate = 10
+
+[pagination]
+  pagerSize = 10
 
 [params]
   author = "カイヌシ"
@@ -14,7 +16,7 @@ paginate = 10
   defaultMarkdownHandler = "goldmark"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
 
 [permalinks]
   posts = "/posts/:slug/"

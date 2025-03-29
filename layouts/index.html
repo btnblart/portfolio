@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <div class="grid">
+    {{ range .Site.RegularPages }}
+      <div class="item">
+        <a href="{{ .RelPermalink }}">
+          <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+        </a>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

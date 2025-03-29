@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My Hugo Blog</title>
+    <title>Posts on btnb/portfolio</title>
     <link>http://localhost:1313/post/</link>
-    <description>Recent content in Posts on My Hugo Blog</description>
+    <description>Recent content in Posts on btnb/portfolio</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 27 Mar 2025 12:35:16 +0900</lastBuildDate>

@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Hugo Blog</title>
+    <title>btnb/portfolio</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on My Hugo Blog</description>
+    <description>Recent content on btnb/portfolio</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 27 Mar 2025 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Mar 2025 00:02:46 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>テンプレは</title>
+      <link>http://localhost:1313/posts/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%81%AF/</link>
+      <pubDate>Sat, 29 Mar 2025 00:02:46 +0000</pubDate>
+      <guid>http://localhost:1313/posts/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%81%AF/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/l3104638.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>わいわい</title>
+      <link>http://localhost:1313/posts/%E3%82%8F%E3%81%84%E3%82%8F%E3%81%84/</link>
+      <pubDate>Fri, 28 Mar 2025 23:23:10 +0000</pubDate>
+      <guid>http://localhost:1313/posts/%E3%82%8F%E3%81%84%E3%82%8F%E3%81%84/</guid>
+      <description>&lt;p&gt;わわわわ&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>わいわい</title>
+      <link>http://localhost:1313/posts/%E3%82%8F%E3%81%84%E3%82%8F%E3%81%84/</link>
+      <pubDate>Fri, 28 Mar 2025 23:17:59 +0000</pubDate>
+      <guid>http://localhost:1313/posts/%E3%82%8F%E3%81%84%E3%82%8F%E3%81%84/</guid>
+      <description>&lt;p&gt;わわわわ&lt;/p&gt;</description>
+    </item>
     <item>
       <title>First Post</title>
       <link>http://localhost:1313/posts/first-post/</link>
@@ -24,9 +45,9 @@
     </item>
     <item>
       <title>Hello, world!</title>
-      <link>http://localhost:1313/posts/hello/</link>
+      <link>http://localhost:1313/posts/hello-world/</link>
       <pubDate>Wed, 26 Mar 2025 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/posts/hello/</guid>
+      <guid>http://localhost:1313/posts/hello-world/</guid>
       <description>&lt;p&gt;これは最初のHugoブログ記事です！🎉&lt;/p&gt;&#xA;&lt;p&gt;ここは好きに書き換えてOK！&lt;br&gt;&#xA;マークダウンで文章が書けるので、&lt;strong&gt;太字&lt;/strong&gt;や &lt;a href=&#34;https://example.com&#34;&gt;リンク&lt;/a&gt; も使えるよ！&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;箇条書きもできるし&lt;/li&gt;&#xA;&lt;li&gt;絵文字も 🐉🔥🎨&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;ではでは、良いブログライフを〜〜！&lt;/p&gt;</description>
     </item>
   </channel>

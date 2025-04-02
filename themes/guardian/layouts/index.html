@@ -1,24 +1,30 @@
 {{ partial "header.html" . }}
-<body>
+
+<div class="gallery-wrapper">
   <div class="gallery">
-    <!-- アイキャッチ画像をここに挿入 -->
-    <div class="gallery">
-  {{ range .Site.RegularPages }}
-    <img src="{{ .Params.thumbnail }}" class="thumbnail" data-title="{{ .Title }}" data-content="{{ .Summary }}">
-  {{ end }}
-</div>
-  </div>
-
-  <div class="lightbox" id="lightbox">
-    <div class="lightbox-content">
-      <h2 id="lightbox-title"></h2>
-      <div id="lightbox-body"></div>
+    {{ range .Site.RegularPages }}
+    <div class="thumbnail"
+         data-title="{{ .Title }}"
+         data-date="{{ .Date.Format "2006-01-02" }}"
+         {{ with .Params.tags }}
+           data-tags="{{ delimit . ", " }}"
+         {{ end }}>
+      <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
+      <div class="hidden-content" style="display:none">
+        {{ .Content }}
+      </div>
     </div>
+    {{ end }}
   </div>
+</div>
 
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <h2 id="lightbox-title"></h2>
+    <p id="lightbox-meta" class="meta"></p>
+    <div id="lightbox-body"></div>
+  </div>
+</div>
 
-  <img src="" class="time-image" id="time-image">
-
-  <script src="/js/script.js"></script>
-</body>
-</html>
+<img src="" class="time-image" id="time-image">
+<script src="/js/script.js"></script>

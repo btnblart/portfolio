@@ -16,16 +16,9 @@ collections:
       - { label: "公開日", name: "date", widget: "datetime" }
       - { label: "サムネイル", name: "thumbnail", widget: "image" }
       - { label: "タグ", name: "tags", widget: "list", default: [] }
-      - { label: "本文", name: "body", widget: "markdown" }
-
-
-fields:
-  - {label: "Title", name: "title", widget: "string"}
-  - {label: "Publish Date", name: "date", widget: "datetime"}
-  - {label: "Image", name: "image", widget: "image"}
-  - {
-      label: "Body",
-      name: "body",
-      widget: "markdown",
-      default: "## 見出し\n\nここに本文を書いてね。\n\n- 箇条書き\n- 箇条書き"
-    }
+      - {
+          label: "本文",
+          name: "body",
+          widget: "markdown",
+          default: "## 見出し\n\nここに本文を書いてね。\n\n- 箇条書き\n- 箇条書き"
+        }

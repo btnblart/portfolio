@@ -17,24 +17,16 @@ body {
   font: #444 ;
 }
 
-body[data-theme="morning"] {
-  --text-color: #333;
-  --link-color: #6c2c91;
+body[data-theme="night"] .lightbox-content {
+  color: #eee; /* 夜は明るい文字に！ */
+  background-color: rgba(20, 20, 20, 0.9); /* 夜はちょい暗く */
 }
 
-body[data-theme="day"] {
-  --text-color: #333;
-  --link-color: #005577;
-}
-
-body[data-theme="evening"] {
-  --text-color: #fff;
-  --link-color: #ffcc00;
-}
-
-body[data-theme="night"] {
-  --text-color: #eee;
-  --link-color: #66ccff;
+body[data-theme="day"] .lightbox-content,
+body[data-theme="morning"] .lightbox-content,
+body[data-theme="evening"] .lightbox-content {
+  color: #222; /* 昼は暗めの文字でOK */
+  background-color: rgba(255, 250, 240, 0.95);
 }
 
 body {

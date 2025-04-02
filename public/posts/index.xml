@@ -6,13 +6,27 @@
     <description>Recent content in Posts on btnb/portfolio</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 29 Mar 2025 01:14:36 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Apr 2025 03:14:02 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>.320</title>
-      <link>http://localhost:1313/posts/.320/</link>
+      <title>どや！</title>
+      <link>http://localhost:1313/posts/%E3%81%A9%E3%82%84/</link>
+      <pubDate>Wed, 02 Apr 2025 03:14:02 +0000</pubDate>
+      <guid>http://localhost:1313/posts/%E3%81%A9%E3%82%84/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/untitled-design.jpeg&#34; alt=&#34;1&#34; title=&#34;ｍいｒいｓｈいｒあｓえいｓｈｐ&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>どや！</title>
+      <link>http://localhost:1313/posts/%E3%81%A9%E3%82%84/</link>
+      <pubDate>Wed, 02 Apr 2025 03:10:03 +0000</pubDate>
+      <guid>http://localhost:1313/posts/%E3%81%A9%E3%82%84/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/untitled-design.jpeg&#34; alt=&#34;1&#34; title=&#34;ｍいｒいｓｈいｒあｓえいｓｈｐ&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>320</title>
+      <link>http://localhost:1313/posts/320/</link>
       <pubDate>Sat, 29 Mar 2025 01:14:36 +0000</pubDate>
-      <guid>http://localhost:1313/posts/.320/</guid>
+      <guid>http://localhost:1313/posts/320/</guid>
       <description>&lt;p&gt;アクリルマーカー&lt;/p&gt;</description>
     </item>
     <item>
@@ -20,7 +34,7 @@
       <link>http://localhost:1313/posts/%E3%81%A9%E3%82%84/</link>
       <pubDate>Sat, 29 Mar 2025 01:05:23 +0000</pubDate>
       <guid>http://localhost:1313/posts/%E3%81%A9%E3%82%84/</guid>
-      <description>&lt;p&gt;わいわい&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/untitled-design.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Post 3</title>

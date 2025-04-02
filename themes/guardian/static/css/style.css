@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--bg-gradient);
+  transition: background 1s ease-in-out;
+}
+
+body[data-theme="morning"] {
+  --text-color: #333;
+  --link-color: #6c2c91;
+}
+
+body[data-theme="day"] {
+  --text-color: #333;
+  --link-color: #005577;
+}
+
+body[data-theme="evening"] {
+  --text-color: #fff;
+  --link-color: #ffcc00;
+}
+
+body[data-theme="night"] {
+  --text-color: #eee;
+  --link-color: #66ccff;
+}
+
+body {
+  color: var(--text-color);
+}
+
+a, .tag-link {
+  color: var(--link-color);
+}
+
+
+.thumbnail {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  background: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.time-image {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 300px;
+  height: auto;
+  z-index: 10;
+}

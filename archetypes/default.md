@@ -1,7 +1,10 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-image: /images/sample.jpg
+thumbnail: /images/sample.jpg
+draft: false
+tags: ["", ""]
+categories: [""]
 ---
 
 ## 見出し

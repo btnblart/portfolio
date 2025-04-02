@@ -1,7 +1,7 @@
 baseURL = "https://btnb.netlify.app/" # ←あなたのURLに変更してOK
 languageCode = "ja"
 title = "btnb/portfolio"
-theme = "ananke"
+theme = "guardian"
 enableRobotsTXT = true
 
 [pagination]
@@ -20,3 +20,7 @@ enableRobotsTXT = true
 
 [permalinks]
   posts = "/posts/:slug/"
+  
+[taxonomies]
+  tag = "tags"
+  category = "categories"

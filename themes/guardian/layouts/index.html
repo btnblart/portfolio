@@ -5,7 +5,7 @@
     <div class="gallery">
   {{ range .Site.RegularPages }}
     <img src="{{ .Params.thumbnail }}" class="thumbnail" data-title="{{ .Title }}" data-content="{{ .Summary }}">
-  {{ end }}aaaa
+  {{ end }}
 </div>
   </div>
 
@@ -14,7 +14,7 @@
   </div>
 
   <img src="" class="time-image" id="time-image">
-{{ partial "tagcloud.html" . }}
+
   <script src="/js/script.js"></script>
 </body>
 </html>

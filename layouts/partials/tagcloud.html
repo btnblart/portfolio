@@ -1,0 +1,19 @@
+{{ $minSize := 12 }}
+{{ $maxSize := 30 }}
+{{ $maxCount := 0 }}
+
+{{ range $key, $val := .Site.Taxonomies.tags }}
+  {{ if gt $val.Count $maxCount }}
+    {{ $maxCount = $val.Count }}
+  {{ end }}
+{{ end }}
+
+<div class="tag-cloud">
+  {{ range $key, $val := .Site.Taxonomies.tags }}
+    {{ $count := $val.Count }}
+    {{ $size := add $minSize (mul (div $count $maxCount) (sub $maxSize $minSize)) }}
+    <a href="{{ $val.Page.Permalink }}" class="tag-link" style="font-size:{{ $size }}px">
+      #{{ $val.Page.Title }} ({{ $val.Count }})
+    </a>
+  {{ end }}
+</div>

@@ -8,15 +8,16 @@ public_folder: "/images"
 
 collections:
   - name: "posts"
-    label: "Posts"
+    label: "投稿"
     folder: "content/posts"
     create: true
-    slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - { label: "タイトル", name: "title", widget: "string" }
+      - { label: "公開日", name: "date", widget: "datetime" }
+      - { label: "サムネイル", name: "thumbnail", widget: "image" }
+      - { label: "タグ", name: "tags", widget: "list", default: [] }
+      - { label: "本文", name: "body", widget: "markdown" }
+
 
 fields:
   - {label: "Title", name: "title", widget: "string"}

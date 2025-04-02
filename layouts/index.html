@@ -2,11 +2,12 @@
 <body>
   <div class="gallery">
     {{ range .Site.RegularPages }}
-      <img
-        src="{{ .Params.thumbnail }}"
-        class="thumbnail"
-        data-title="{{ .Title }}"
-        data-content="{{ .Content | safeHTML }}">
+      <div class="thumbnail" data-title="{{ .Title }}">
+        <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
+        <div class="hidden-content" style="display:none">
+          {{ .Content }}
+        </div>
+      </div>
     {{ end }}
   </div>
 

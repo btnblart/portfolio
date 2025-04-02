@@ -131,7 +131,7 @@ a, .tag-link {
 }
 
 .time-image {
-  position: fixed;
+  position: absolute;
   bottom: 10px;
   right: 10px;
   width: 300px;
@@ -139,3 +139,45 @@ a, .tag-link {
   z-index: 10;
 }
 
+@media (max-width: 768px) {
+  .gallery {
+    padding: 0.8rem; /* ←余白が多すぎると1列しか入らん */
+    column-width: 150px;
+    column-gap: 0.5rem;
+  }
+
+  .thumbnail {
+    border-radius: 0.5rem;
+  }
+  
+  .lightbox-content {
+    width: 90vw;
+    height: auto;
+    max-height: 80vh;
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    border-radius: 12px;
+  }
+
+  .lightbox-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .lightbox-content p {
+    font-size: 0.9rem;
+  }
+  .lightbox-content img {
+      width: 50vh;
+  }
+  
+
+  .time-image {
+    width: 200px; /* ← スマホではちっちゃく */
+    bottom: 5px;
+    right: 5px;
+    z-index: 1; /* 投稿より下に！ */
+  }
+
+
+}

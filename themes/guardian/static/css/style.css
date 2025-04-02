@@ -165,12 +165,13 @@ a, .tag-link {
 
 .time-image {
   position: fixed;
-  top: 10px;
-  right: 10px;
-  width: 15vw;
-  z-index: 100;
-  opacity: 0.85;
-  pointer-events: none; /* ← 誤タップ防止！ */
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  z-index: -1;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8)); /* ← 白いフワッとした光で縁どる！ */
+  pointer-events: none;
 }
 
 .site-header {

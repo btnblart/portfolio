@@ -5,28 +5,44 @@ body, html {
   padding: 0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: var(--bg-gradient);
-  transition: background 1s ease-in-out;
-  font-family: 'Zen Maru Gothic', sans-serif;
-  font: #444 ;
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/images/canvas.jpg');
+  background-repeat: repeat;
+  background-size: 800px 800px;
+  z-index: -10;
 }
 
-body[data-theme="night"] .lightbox-content {
-  color: #eee; /* 夜は明るい文字に！ */
-  background-color: rgba(20, 20, 20, 0.9); /* 夜はちょい暗く */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay-gradient);
+  z-index: -9;  /* ← グラデーション：背景のちょい前 */
+  pointer-events: none; /* ← 安全対策で */
 }
 
-body[data-theme="day"] .lightbox-content,
-body[data-theme="morning"] .lightbox-content,
-body[data-theme="evening"] .lightbox-content {
-  color: #222; /* 昼は暗めの文字でOK */
-  background-color: rgba(255, 250, 240, 0.95);
+
+body[data-theme="morning"] {
+  --overlay-gradient: linear-gradient(to bottom, rgba(248,205,218,0.3), rgba(224,195,252,0.4));
+}
+
+body[data-theme="day"] {
+  --overlay-gradient: linear-gradient(to bottom, rgba(255,248,225,0.4), rgba(255,248,225,0.8));
+}
+
+body[data-theme="evening"] {
+  --overlay-gradient: linear-gradient(to bottom, rgba(255,153,102,0.3), rgba(0,51,102,0.6));
+}
+
+body[data-theme="night"] {
+  --overlay-gradient: linear-gradient(to bottom, rgba(0,31,63,0.4), rgba(0,0,0,0.7));
 }
 
 body {
@@ -123,13 +139,26 @@ a, .tag-link {
 }
 
 .time-image {
-  position: absolute;
-  bottom: 10px;
+  position: fixed;
+  top: 10px;
   right: 10px;
-  width: 300px;
-  height: auto;
-  z-index: 10;
+  width: 15vw;
+  z-index: 100;
+  opacity: 0.85;
+  pointer-events: none; /* ← 誤タップ防止！ */
 }
+
+.site-header {
+  padding: 1rem;
+  text-align: center; /* 左寄せなら left に変えてOK */
+}
+
+.site-logo {
+  width: 200px;
+  max-width: 90vw;
+  height: auto;
+}
+
 
 @media (max-width: 768px) {
   .gallery {
@@ -165,10 +194,7 @@ a, .tag-link {
   
 
   .time-image {
-    width: 200px; /* ← スマホではちっちゃく */
-    bottom: 5px;
-    right: 5px;
-    z-index: 1; /* 投稿より下に！ */
+    width: 120px; /* ← スマホではちっちゃく */
   }
 
 

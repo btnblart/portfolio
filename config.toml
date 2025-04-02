@@ -9,8 +9,8 @@ enableRobotsTXT = true
 
 [params]
   author = "彩まそほ"
-  favicon = "images/favicon.ico"
-  description = "これはHugo + Anankeで作られたサイトです。"
+  favicon = "images/btnb.ico"
+  description = "portfolioサイトです。"
 
 [markup]
   defaultMarkdownHandler = "goldmark"

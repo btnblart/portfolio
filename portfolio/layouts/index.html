@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+<body>
+  <div class="gallery">
+    <!-- アイキャッチ画像をここに挿入 -->
+    <div class="gallery">
+  {{ range .Site.RegularPages }}
+    <img src="{{ .Params.thumbnail }}" class="thumbnail" data-title="{{ .Title }}" data-content="{{ .Summary }}">
+  {{ end }}
+</div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content" id="lightbox-content"></div>
+  </div>
+
+  <img src="" class="time-image" id="time-image">
+{{ partial "tagcloud.html" . }}
+  <script src="/js/script.js"></script>
+</body>
+</html>

@@ -25,13 +25,20 @@ if (hour >= 6 && hour < 9) {
 }
 
 
-document.querySelectorAll('.thumbnail').forEach(img => {
-  img.addEventListener('click', () => {
-    lightboxContent.innerText = img.dataset.content;
-    lightbox.style.display = 'flex';
-  });
-});
+document.addEventListener("DOMContentLoaded", function () {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxTitle = document.getElementById('lightbox-title');
+  const lightboxBody = document.getElementById('lightbox-body');
 
-lightbox.addEventListener('click', () => {
-  lightbox.style.display = 'none';
+  document.querySelectorAll('.thumbnail').forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxTitle.innerText = img.dataset.title;
+      lightboxBody.innerHTML = img.dataset.content; // ←ここ重要
+      lightbox.style.display = 'flex';
+    });
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
 });

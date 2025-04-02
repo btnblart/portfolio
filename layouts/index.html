@@ -4,7 +4,10 @@
     <!-- アイキャッチ画像をここに挿入 -->
     <div class="gallery">
   {{ range .Site.RegularPages }}
-    <img src="{{ .Params.thumbnail }}" class="thumbnail" data-title="{{ .Title }}" data-content="{{ .Summary }}">
+  <img src="{{ .Params.thumbnail }}"
+class="thumbnail"
+data-title="{{ .Title }}"
+data-content="{{ .Content | safeHTML }}">
   {{ end }}
 </div>
   </div>

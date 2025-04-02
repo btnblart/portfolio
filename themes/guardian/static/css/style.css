@@ -49,6 +49,31 @@ body {
   color: var(--text-color);
 }
 
+/* 朝方（pastel pink〜purple） */
+body[data-theme="morning"] .lightbox-content {
+  background-color: rgba(248, 205, 218, 0.65); /* くすみピンク透明感 */
+  color: #333;
+}
+
+/* 昼（アイボリー） */
+body[data-theme="day"] .lightbox-content {
+  background-color: rgba(255, 250, 240, 0.85); /* アイボリー系 */
+  color: #333;
+}
+
+/* 夕方（オレンジ〜紺） */
+body[data-theme="evening"] .lightbox-content {
+  background-color: rgba(30, 30, 60, 0.7); /* 夕焼け→夜空感 */
+  color: #fff;
+}
+
+/* 夜（紺〜黒） */
+body[data-theme="night"] .lightbox-content {
+  background-color: rgba(10, 10, 30, 0.75); /* ほぼ夜空 */
+  color: #eee;
+}
+
+
 a, .tag-link {
   color: var(--link-color);
 }
@@ -109,7 +134,7 @@ a, .tag-link {
 }
 
 .lightbox-content {
-  background-color: rgba(255, 250, 240, 0.95);
+  background-color: rgba(255, 250, 240, 0.85);
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.4);

@@ -36,5 +36,12 @@
       <guid>http://localhost:1313/posts/320/</guid>
       <description>&lt;p&gt;アクリルマーカー&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>旅路</title>
+      <link>http://localhost:1313/posts/%E6%97%85%E8%B7%AF/</link>
+      <pubDate>Thu, 04 Apr 2024 07:10:58 +0000</pubDate>
+      <guid>http://localhost:1313/posts/%E6%97%85%E8%B7%AF/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/img_0024.jpeg&#34; alt=&#34;1枚目&#34; title=&#34;旅路の始まり&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;個展 旅路 2024 油絵&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

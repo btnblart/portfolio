@@ -64,5 +64,12 @@
       <guid>http://localhost:1313/tags/%E9%A2%A8%E6%99%AF/</guid>
       <description></description>
     </item>
+    <item>
+      <title>らくがき</title>
+      <link>http://localhost:1313/tags/%E3%82%89%E3%81%8F%E3%81%8C%E3%81%8D/</link>
+      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E3%82%89%E3%81%8F%E3%81%8C%E3%81%8D/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

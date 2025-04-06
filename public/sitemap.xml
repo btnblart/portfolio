@@ -86,6 +86,12 @@
     <loc>http://localhost:1313/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/mjnc/</loc>
+    <lastmod>2022-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E3%82%89%E3%81%8F%E3%81%8C%E3%81%8D/</loc>
+    <lastmod>2022-05-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>

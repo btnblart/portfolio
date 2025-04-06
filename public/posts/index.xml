@@ -6,42 +6,133 @@
     <description>Recent content in Posts on btnb/portfolio</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 02 Apr 2025 04:12:16 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>サブスク絵葉書</title>
-      <link>http://localhost:1313/posts/%E3%82%B5%E3%83%96%E3%82%B9%E3%82%AF%E7%B5%B5%E8%91%89%E6%9B%B8/</link>
-      <pubDate>Wed, 02 Apr 2025 04:12:16 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E3%82%B5%E3%83%96%E3%82%B9%E3%82%AF%E7%B5%B5%E8%91%89%E6%9B%B8/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/img_2992.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;3月分です。&lt;/p&gt;</description>
+      <title>test</title>
+      <link>http://localhost:1313/posts/test/</link>
+      <pubDate>Fri, 04 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/test/</guid>
+      <description>&lt;p&gt;クロッキー会&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2025-04-04test.jpeg&#34; alt=&#34;test&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>ゆうれいがっこう</title>
-      <link>http://localhost:1313/posts/%E3%82%86%E3%81%86%E3%82%8C%E3%81%84%E3%81%8C%E3%81%A3%E3%81%93%E3%81%86/</link>
-      <pubDate>Wed, 02 Apr 2025 04:04:36 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E3%82%86%E3%81%86%E3%82%8C%E3%81%84%E3%81%8C%E3%81%A3%E3%81%93%E3%81%86/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/img_3220.jpeg&#34; alt=&#34;&#34; title=&#34;1ページ目&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;ゆうれいがっこう&lt;/p&gt;</description>
+      <title>testttt</title>
+      <link>http://localhost:1313/posts/testttt/</link>
+      <pubDate>Fri, 04 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/testttt/</guid>
+      <description>&lt;p&gt;てすと&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2025-04-04testttt.jpeg&#34; alt=&#34;testttt&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>どや！</title>
-      <link>http://localhost:1313/posts/%E3%81%A9%E3%82%84/</link>
-      <pubDate>Wed, 02 Apr 2025 03:14:02 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E3%81%A9%E3%82%84/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/untitled-design.jpeg&#34; alt=&#34;g&#34;&gt;&lt;/p&gt;</description>
+      <title>2025-03-22-サブスク絵葉書3月</title>
+      <link>http://localhost:1313/posts/2025-03-22-%E3%82%B5%E3%83%96%E3%82%B9%E3%82%AF%E7%B5%B5%E8%91%89%E6%9B%B83%E6%9C%88/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-03-22-%E3%82%B5%E3%83%96%E3%82%B9%E3%82%AF%E7%B5%B5%E8%91%89%E6%9B%B83%E6%9C%88/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2025-03-22-%E3%82%B5%E3%83%96%E3%82%B9%E3%82%AF%E7%B5%B5%E8%91%89%E6%9B%B83%E6%9C%88.jpeg&#34; alt=&#34;2025-03-22-サブスク絵葉書3月&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>320</title>
-      <link>http://localhost:1313/posts/320/</link>
-      <pubDate>Sat, 29 Mar 2025 01:14:36 +0000</pubDate>
-      <guid>http://localhost:1313/posts/320/</guid>
-      <description>&lt;p&gt;アクリルマーカー&lt;/p&gt;</description>
+      <title>2025-02-23-1h</title>
+      <link>http://localhost:1313/posts/2025-02-23-1h/</link>
+      <pubDate>Sun, 23 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-02-23-1h/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2025-02-23-1h.jpeg&#34; alt=&#34;2025-02-23-1h&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>旅路</title>
-      <link>http://localhost:1313/posts/%E6%97%85%E8%B7%AF/</link>
-      <pubDate>Thu, 04 Apr 2024 07:10:58 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E6%97%85%E8%B7%AF/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/img_0024.jpeg&#34; alt=&#34;1枚目&#34; title=&#34;旅路の始まり&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;個展 旅路 2024 油絵&lt;/p&gt;</description>
+      <title>2024-08-29-notebook</title>
+      <link>http://localhost:1313/posts/2024-08-29-notebook/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-08-29-notebook/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2024-08-29-notebook.jpeg&#34; alt=&#34;2024-08-29-notebook&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2024-07-02-旅路12</title>
+      <link>http://localhost:1313/posts/2024-07-02-%E6%97%85%E8%B7%AF12/</link>
+      <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-07-02-%E6%97%85%E8%B7%AF12/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2024-07-02-%E6%97%85%E8%B7%AF12.jpeg&#34; alt=&#34;2024-07-02-旅路12&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2024-07-02-旅路13</title>
+      <link>http://localhost:1313/posts/2024-07-02-%E6%97%85%E8%B7%AF13/</link>
+      <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-07-02-%E6%97%85%E8%B7%AF13/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2024-07-02-%E6%97%85%E8%B7%AF13.jpeg&#34; alt=&#34;2024-07-02-旅路13&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2024-07-02-旅路14</title>
+      <link>http://localhost:1313/posts/2024-07-02-%E6%97%85%E8%B7%AF14/</link>
+      <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-07-02-%E6%97%85%E8%B7%AF14/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2024-07-02-%E6%97%85%E8%B7%AF14.jpeg&#34; alt=&#34;2024-07-02-旅路14&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2024-07-02-旅路15</title>
+      <link>http://localhost:1313/posts/2024-07-02-%E6%97%85%E8%B7%AF15/</link>
+      <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-07-02-%E6%97%85%E8%B7%AF15/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2024-07-02-%E6%97%85%E8%B7%AF15.jpeg&#34; alt=&#34;2024-07-02-旅路15&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2024-07-02-旅路16</title>
+      <link>http://localhost:1313/posts/2024-07-02-%E6%97%85%E8%B7%AF16/</link>
+      <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-07-02-%E6%97%85%E8%B7%AF16/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2024-07-02-%E6%97%85%E8%B7%AF16.jpeg&#34; alt=&#34;2024-07-02-旅路16&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2024-07-02-旅路17</title>
+      <link>http://localhost:1313/posts/2024-07-02-%E6%97%85%E8%B7%AF17/</link>
+      <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-07-02-%E6%97%85%E8%B7%AF17/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2024-07-02-%E6%97%85%E8%B7%AF17.jpeg&#34; alt=&#34;2024-07-02-旅路17&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2024-07-02-旅路18</title>
+      <link>http://localhost:1313/posts/2024-07-02-%E6%97%85%E8%B7%AF18/</link>
+      <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-07-02-%E6%97%85%E8%B7%AF18/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2024-07-02-%E6%97%85%E8%B7%AF18.jpeg&#34; alt=&#34;2024-07-02-旅路18&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2024-05-17-旅路2</title>
+      <link>http://localhost:1313/posts/2024-05-17-%E6%97%85%E8%B7%AF2/</link>
+      <pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-05-17-%E6%97%85%E8%B7%AF2/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2024-05-17-%E6%97%85%E8%B7%AF2.jpeg&#34; alt=&#34;2024-05-17-旅路2&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2024-05-17-旅路3</title>
+      <link>http://localhost:1313/posts/2024-05-17-%E6%97%85%E8%B7%AF3/</link>
+      <pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-05-17-%E6%97%85%E8%B7%AF3/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2024-05-17-%E6%97%85%E8%B7%AF3.jpeg&#34; alt=&#34;2024-05-17-旅路3&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2024-05-17-旅路4</title>
+      <link>http://localhost:1313/posts/2024-05-17-%E6%97%85%E8%B7%AF4/</link>
+      <pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-05-17-%E6%97%85%E8%B7%AF4/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2024-05-17-%E6%97%85%E8%B7%AF4.jpeg&#34; alt=&#34;2024-05-17-旅路4&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2024-05-02-旅路11 </title>
+      <link>http://localhost:1313/posts/2024-05-02-%E6%97%85%E8%B7%AF11/</link>
+      <pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-05-02-%E6%97%85%E8%B7%AF11/</guid>
+      <description>&lt;p&gt;![2024-05-02-旅路11&#xA;](/images/2024-05-02-旅路11&#xA;.jpeg)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2024-03-07-旅路1</title>
+      <link>http://localhost:1313/posts/2024-03-07-%E6%97%85%E8%B7%AF1/</link>
+      <pubDate>Thu, 07 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2024-03-07-%E6%97%85%E8%B7%AF1/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2024-03-07-%E6%97%85%E8%B7%AF1.jpeg&#34; alt=&#34;2024-03-07-旅路1&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/</guid>
+      <description>&lt;h1 id=&#34;2024-05-17-旅路10&#34;&gt;2024-05-17-旅路10&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;thumbnail-images2024-05-17-旅路10jpeg&#34;&gt;title: &amp;ldquo;2024-05-17-旅路10&amp;rdquo;&#xA;date: 2024-05-17&#xA;draft: false&#xA;tags: [&amp;ldquo;oilpainging&amp;rdquo;,&amp;ldquo;旅路&amp;rdquo;,&amp;ldquo;hanfu&amp;rdquo;]&#xA;thumbnail: &amp;ldquo;/images/2024-05-17-旅路10.jpeg&amp;rdquo;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2024-05-17-%E6%97%85%E8%B7%AF10.jpeg&#34; alt=&#34;2024-05-17-旅路10&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

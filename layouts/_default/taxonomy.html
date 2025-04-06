@@ -1,0 +1,29 @@
+{{ partial "header.html" . }}
+
+{{ $paginator := .Paginate .Pages }}
+
+<div class="gallery-wrapper">
+  <div class="gallery">
+    {{ range $paginator.Pages }}
+      <div class="thumbnail"
+           data-title="{{ .Title }}"
+           data-date="{{ .Date.Format "2006-01-02" }}"
+           {{ with .Params.tags }}
+             data-tags="{{ delimit . ", " }}"
+           {{ end }}>
+        <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
+        <div class="hidden-content" style="display:none">
+            {{ .Plain }}
+        </div>
+
+      </div>
+    {{ end }}
+  </div>
+</div>
+
+{{ template "_internal/pagination.html" . }}
+
+<!-- LightboxやJSなど -->
+<div class="lightbox" id="lightbox">…</div>
+<img src="" class="time-image" id="time-image">
+<script src="/js/script.js"></script>

@@ -185,6 +185,36 @@ a, .tag-link {
   height: auto;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  list-style: none;
+  padding: 0;
+  gap: 0.5em;
+}
+
+.pagination li {
+  display: inline-block;
+}
+
+.pagination a,
+.pagination span {
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  font-size: 14px;
+}
+
+.pagination .active {
+  background-color: #333;
+  color: white;
+  border-color: #333;
+}
+
+
 
 @media (max-width: 768px) {
   .gallery {
@@ -196,7 +226,7 @@ a, .tag-link {
   .thumbnail {
     border-radius: 0.5rem;
   }
-  
+
   .lightbox-content {
     width: 90vw;
     height: auto;
@@ -217,7 +247,7 @@ a, .tag-link {
   .lightbox-content img {
       width: 50vh;
   }
-  
+
 
   .time-image {
     width: 120px; /* ← スマホではちっちゃく */

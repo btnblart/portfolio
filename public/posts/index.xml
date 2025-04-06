@@ -6,35 +6,14 @@
     <description>Recent content in Posts on btnb/portfolio</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 04 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>test</title>
-      <link>http://localhost:1313/posts/test/</link>
-      <pubDate>Fri, 04 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/test/</guid>
-      <description>&lt;p&gt;クロッキー会&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2025-04-04test.jpeg&#34; alt=&#34;test&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>testttt</title>
-      <link>http://localhost:1313/posts/testttt/</link>
-      <pubDate>Fri, 04 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/testttt/</guid>
-      <description>&lt;p&gt;てすと&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2025-04-04testttt.jpeg&#34; alt=&#34;testttt&#34;&gt;&lt;/p&gt;</description>
-    </item>
     <item>
       <title>2025-03-22-サブスク絵葉書3月</title>
       <link>http://localhost:1313/posts/2025-03-22-%E3%82%B5%E3%83%96%E3%82%B9%E3%82%AF%E7%B5%B5%E8%91%89%E6%9B%B83%E6%9C%88/</link>
       <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2025-03-22-%E3%82%B5%E3%83%96%E3%82%B9%E3%82%AF%E7%B5%B5%E8%91%89%E6%9B%B83%E6%9C%88/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2025-03-22-%E3%82%B5%E3%83%96%E3%82%B9%E3%82%AF%E7%B5%B5%E8%91%89%E6%9B%B83%E6%9C%88.jpeg&#34; alt=&#34;2025-03-22-サブスク絵葉書3月&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>とら</title>
-      <link>http://localhost:1313/posts/%E3%81%A8%E3%82%89/</link>
-      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E3%81%A8%E3%82%89/</guid>
-      <description>&lt;p&gt;とら&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2025-03-17%E3%81%A8%E3%82%89.jpeg&#34; alt=&#34;とら&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>2025-02-23-1h</title>
@@ -125,7 +104,7 @@
       <link>http://localhost:1313/posts/2024-05-02-%E6%97%85%E8%B7%AF11/</link>
       <pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2024-05-02-%E6%97%85%E8%B7%AF11/</guid>
-      <description>&lt;p&gt;![2024-05-02-旅路11&#xA;](/images/2024-05-02-旅路11&#xA;.jpeg)&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2024-05-02-%E6%97%85%E8%B7%AF11.jpeg&#34; alt=&#34;2024-05-02-旅路11&#xA;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>2024-03-07-旅路1</title>
@@ -133,13 +112,6 @@
       <pubDate>Thu, 07 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/2024-03-07-%E6%97%85%E8%B7%AF1/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2024-03-07-%E6%97%85%E8%B7%AF1.jpeg&#34; alt=&#34;2024-03-07-旅路1&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>mjnc</title>
-      <link>http://localhost:1313/posts/mjnc/</link>
-      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/mjnc/</guid>
-      <description>&lt;p&gt;いきもの&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/2022-05-11mjnc.jpeg&#34; alt=&#34;mjnc&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>

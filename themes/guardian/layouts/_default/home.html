@@ -11,13 +11,12 @@
                data-tags="{{ delimit . ", " }}"
              {{ end }}>
 
-          <!-- Lightbox 用リンク -->
-          <a href="{{ .Params.thumbnail }}" data-lightbox="gallery" data-title="{{ .Title }}">
-            <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
-          </a>
+          <!-- サムネイル画像 -->
+          <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
 
-          <!-- 本文は別で保持 -->
+          <!-- 隠し本文（Lightboxに出す用） -->
           <div class="hidden-content" style="display:none">
+            <h2>{{ .Title }}</h2>
             {{ .Content }}
           </div>
         </div>

@@ -1,6 +1,7 @@
 {{- with resources.Get "css/main.css" }}
   {{- if eq hugo.Environment "development" }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
   {{- else }}
     {{- with . | minify | fingerprint }}
       <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">

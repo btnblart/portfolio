@@ -2,94 +2,150 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on btnb/portfolio</title>
-    <link>https://btnb.netlify.app/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on btnb/portfolio</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 14 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://btnb.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Animal</title>
-      <link>https://btnb.netlify.app/tags/animal/</link>
-      <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://btnb.netlify.app/tags/animal/</guid>
+      <title>Grampy</title>
+      <link>http://localhost:1313/tags/grampy/</link>
+      <pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/grampy/</guid>
       <description></description>
     </item>
     <item>
       <title>Hanfu</title>
-      <link>https://btnb.netlify.app/tags/hanfu/</link>
-      <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://btnb.netlify.app/tags/hanfu/</guid>
+      <link>http://localhost:1313/tags/hanfu/</link>
+      <pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hanfu/</guid>
       <description></description>
     </item>
     <item>
       <title>Oilpainting</title>
-      <link>https://btnb.netlify.app/tags/oilpainting/</link>
+      <link>http://localhost:1313/tags/oilpainting/</link>
+      <pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/oilpainting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Animal</title>
+      <link>http://localhost:1313/tags/animal/</link>
       <pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://btnb.netlify.app/tags/oilpainting/</guid>
+      <guid>http://localhost:1313/tags/animal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Artrage</title>
+      <link>http://localhost:1313/tags/artrage/</link>
+      <pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/artrage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digital</title>
+      <link>http://localhost:1313/tags/digital/</link>
+      <pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/digital/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Granny</title>
+      <link>http://localhost:1313/tags/granny/</link>
+      <pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/granny/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oyaji</title>
+      <link>http://localhost:1313/tags/oyaji/</link>
+      <pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/oyaji/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rkgk</title>
+      <link>http://localhost:1313/tags/rkgk/</link>
+      <pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/rkgk/</guid>
       <description></description>
     </item>
     <item>
       <title>Cat</title>
-      <link>https://btnb.netlify.app/tags/cat/</link>
+      <link>http://localhost:1313/tags/cat/</link>
       <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://btnb.netlify.app/tags/cat/</guid>
+      <guid>http://localhost:1313/tags/cat/</guid>
       <description></description>
     </item>
     <item>
       <title>Food</title>
-      <link>https://btnb.netlify.app/tags/food/</link>
+      <link>http://localhost:1313/tags/food/</link>
       <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://btnb.netlify.app/tags/food/</guid>
+      <guid>http://localhost:1313/tags/food/</guid>
       <description></description>
     </item>
     <item>
       <title>Oilcraypas</title>
-      <link>https://btnb.netlify.app/tags/oilcraypas/</link>
+      <link>http://localhost:1313/tags/oilcraypas/</link>
       <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://btnb.netlify.app/tags/oilcraypas/</guid>
+      <guid>http://localhost:1313/tags/oilcraypas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Croquis</title>
+      <link>http://localhost:1313/tags/croquis/</link>
+      <pubDate>Fri, 04 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/croquis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oilpastel</title>
+      <link>http://localhost:1313/tags/oilpastel/</link>
+      <pubDate>Fri, 04 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/oilpastel/</guid>
       <description></description>
     </item>
     <item>
       <title>ペン画</title>
-      <link>https://btnb.netlify.app/tags/%E3%83%9A%E3%83%B3%E7%94%BB/</link>
+      <link>http://localhost:1313/tags/%E3%83%9A%E3%83%B3%E7%94%BB/</link>
       <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://btnb.netlify.app/tags/%E3%83%9A%E3%83%B3%E7%94%BB/</guid>
+      <guid>http://localhost:1313/tags/%E3%83%9A%E3%83%B3%E7%94%BB/</guid>
       <description></description>
     </item>
     <item>
       <title>Oilpainging</title>
-      <link>https://btnb.netlify.app/tags/oilpainging/</link>
+      <link>http://localhost:1313/tags/oilpainging/</link>
       <pubDate>Tue, 11 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://btnb.netlify.app/tags/oilpainging/</guid>
+      <guid>http://localhost:1313/tags/oilpainging/</guid>
       <description></description>
     </item>
     <item>
       <title>頁画</title>
-      <link>https://btnb.netlify.app/tags/%E9%A0%81%E7%94%BB/</link>
+      <link>http://localhost:1313/tags/%E9%A0%81%E7%94%BB/</link>
       <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://btnb.netlify.app/tags/%E9%A0%81%E7%94%BB/</guid>
+      <guid>http://localhost:1313/tags/%E9%A0%81%E7%94%BB/</guid>
       <description></description>
     </item>
     <item>
       <title>Notebook</title>
-      <link>https://btnb.netlify.app/tags/notebook/</link>
+      <link>http://localhost:1313/tags/notebook/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://btnb.netlify.app/tags/notebook/</guid>
+      <guid>http://localhost:1313/tags/notebook/</guid>
       <description></description>
     </item>
     <item>
       <title>旅路</title>
-      <link>https://btnb.netlify.app/tags/%E6%97%85%E8%B7%AF/</link>
+      <link>http://localhost:1313/tags/%E6%97%85%E8%B7%AF/</link>
       <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://btnb.netlify.app/tags/%E6%97%85%E8%B7%AF/</guid>
+      <guid>http://localhost:1313/tags/%E6%97%85%E8%B7%AF/</guid>
       <description></description>
     </item>
     <item>
       <title>風景</title>
-      <link>https://btnb.netlify.app/tags/%E9%A2%A8%E6%99%AF/</link>
+      <link>http://localhost:1313/tags/%E9%A2%A8%E6%99%AF/</link>
       <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://btnb.netlify.app/tags/%E9%A2%A8%E6%99%AF/</guid>
+      <guid>http://localhost:1313/tags/%E9%A2%A8%E6%99%AF/</guid>
       <description></description>
     </item>
   </channel>

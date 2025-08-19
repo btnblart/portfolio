@@ -1,5 +1,4 @@
-{{ partial "header.html" . }}
-
+{{ define "main" }}
 {{ $paginator := .Paginate .Pages }}
 
 <div class="gallery-wrapper">
@@ -23,7 +22,13 @@
 
 {{ template "_internal/pagination.html" . }}
 
-<!-- LightboxやJSなど -->
-<div class="lightbox" id="lightbox">…</div>
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <h2 id="lightbox-title"></h2>
+    <p id="lightbox-meta" class="meta"></p>
+    <div id="lightbox-body"></div>
+  </div>
+</div>
+
 <img src="" class="time-image" id="time-image">
-<script src="/js/script.js"></script>
+{{ end }}

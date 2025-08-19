@@ -5,7 +5,7 @@ theme = "guardian"
 enableRobotsTXT = true
 
 [pagination]
-  pagerSize = 10
+  pagerSize = 30
 
 [params]
   author = "彩まそほ"
@@ -25,4 +25,3 @@ enableRobotsTXT = true
   tag = "tags"
   category = "categories"
 
-paginate = 10

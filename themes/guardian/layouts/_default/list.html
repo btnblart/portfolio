@@ -1,13 +1,15 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-    <div style="margin-bottom: 2rem;">
-      {{ with .Params.thumbnail }}
-        <img src="{{ . }}" alt="{{ $.Title }}" style="max-width: 200px; display: block;" />
-      {{ end }}
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ .Summary }}
-    </div>
-  {{ end }}
+  <main class="gallery">
+    {{ range (.Paginate .Pages).Pages }}
+      <div class="thumbnail">
+        {{ with .Params.thumbnail }}
+          <img src="{{ . }}" alt="{{ $.Title }}">
+        {{ end }}
+        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+        {{ .Summary }}
+      </div>
+    {{ end }}
+
+    {{ template "_internal/pagination.html" . }}
+  </main>
 {{ end }}

@@ -1,0 +1,26 @@
+{
+  "name": "site-sync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btnblart/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/btnblart/portfolio/issues"
+  },
+  "homepage": "https://github.com/btnblart/portfolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1"
+  }
+}

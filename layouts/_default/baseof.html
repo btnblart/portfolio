@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
-<head>
+<html lang="ja">
   {{ partial "head.html" . }}
-</head>
-<body>
-  <header>
+<body data-theme="day">
     {{ partial "header.html" . }}
-  </header>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-  <footer>
+
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+
     {{ partial "footer.html" . }}
-  </footer>
-</body>
+  </body>
 </html>

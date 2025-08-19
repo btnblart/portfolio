@@ -1,22 +1,257 @@
+body, html {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/images/canvas.jpg');
+  background-repeat: repeat;
+  background-size: 800px 800px;
+  z-index: -10;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay-gradient);
+  z-index: -9;  /* ← グラデーション：背景のちょい前 */
+  pointer-events: none; /* ← 安全対策で */
+}
+
+
+body[data-theme="morning"] {
+  --overlay-gradient: linear-gradient(to bottom, rgba(248,205,218,0.3), rgba(224,195,252,0.4));
+}
+
+body[data-theme="day"] {
+  --overlay-gradient: linear-gradient(to bottom, rgba(255,248,225,0.4), rgba(255,248,225,0.8));
+}
+
+body[data-theme="evening"] {
+  --overlay-gradient: linear-gradient(to bottom, rgba(255,153,102,0.3), rgba(0,51,102,0.6));
+}
+
+body[data-theme="night"] {
+  --overlay-gradient: linear-gradient(to bottom, rgba(0,31,63,0.4), rgba(0,0,0,0.7));
+}
+
 body {
-  color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
+  color: var(--text-color);
 }
 
-header {
-  border-bottom: 1px solid #222;
+/* 朝方（pastel pink〜purple） */
+body[data-theme="morning"] .lightbox-content {
+  background-color: rgba(248, 205, 218, 0.65); /* くすみピンク透明感 */
+  color: #333;
+}
+
+/* 昼（アイボリー） */
+body[data-theme="day"] .lightbox-content {
+  background-color: rgba(255, 250, 240, 0.85); /* アイボリー系 */
+  color: #333;
+}
+
+/* 夕方（オレンジ〜紺） */
+body[data-theme="evening"] .lightbox-content {
+  background-color: rgba(30, 30, 60, 0.7); /* 夕焼け→夜空感 */
+  color: #fff;
+}
+
+/* 夜（紺〜黒） */
+body[data-theme="night"] .lightbox-content {
+  background-color: rgba(10, 10, 30, 0.75); /* ほぼ夜空 */
+  color: #eee;
+}
+
+
+a, .tag-link {
+  color: var(--link-color);
+}
+
+.gallery-wrapper {
+  width: 100vw;
+  max-width: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery {
+  column-gap: 1rem;
+  padding: 2rem;
+  width: 100%;
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+}
+
+.thumbnail {
+  display: inline-block;
+  width: auto;
+  break-inside: avoid;
+   vertical-align: top;
   margin-bottom: 1rem;
+  background: #fff8e1;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden; /* ←画像に合わせて自動伸縮するため */
 }
 
-footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
+.thumbnail img {
+  display: block;
+  width: 200px;
+  height: auto; /* ← 高さを固定しない！ */
 }
 
-a {
-  color: #00e;
+.lightbox {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+}
+
+.lightbox.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-content {
+  background-color: rgba(255, 250, 240, 0.85);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+
+
+.lightbox.show .lightbox-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.lightbox-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.lightbox-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.lightbox-content::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.time-image {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  z-index: -1;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8)); /* ← 白いフワッとした光で縁どる！ */
+  pointer-events: none;
+}
+
+.site-header {
+  padding: 1rem;
+  text-align: center; /* 左寄せなら left に変えてOK */
+}
+
+.site-logo {
+  width: 200px;
+  max-width: 90vw;
+  height: auto;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  list-style: none;
+  padding: 0;
+  gap: 0.5em;
+}
+
+.pagination li {
+  display: inline-block;
+}
+
+.pagination a,
+.pagination span {
+  padding: 0.5em 1em;
   text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  font-size: 14px;
+}
+
+.pagination .active {
+  background-color: #333;
+  color: white;
+  border-color: #333;
+}
+
+
+
+@media (max-width: 768px) {
+  .gallery {
+    padding: 0.8rem; /* ←余白が多すぎると1列しか入らん */
+    column-width: 150px;
+    column-gap: 0.5rem;
+  }
+
+  .thumbnail {
+    border-radius: 0.5rem;
+  }
+
+  .lightbox-content {
+    width: 90vw;
+    height: auto;
+    max-height: 80vh;
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    border-radius: 12px;
+  }
+
+  .lightbox-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .lightbox-content p {
+    font-size: 0.9rem;
+  }
+  .lightbox-content img {
+      width: 50vh;
+  }
+
+
+  .time-image {
+    width: 120px; /* ← スマホではちっちゃく */
+  }
+
+
 }

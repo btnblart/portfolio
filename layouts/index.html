@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 
 {{ $paginator := .Paginate .Site.RegularPages }}
 
@@ -20,7 +20,6 @@
   </div>
 </div>
 
-
 <div class="lightbox" id="lightbox">
   <div class="lightbox-content">
     <h2 id="lightbox-title"></h2>
@@ -32,7 +31,7 @@
 <img src="" class="time-image" id="time-image">
 
 {{ template "_internal/pagination.html" . }}
-<script src="/js/script.js"></script>
+
 <div class="tag-cloud">
   {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
     <a href="{{ "/tags/" | relURL }}{{ $name | urlize }}" class="tag">
@@ -40,3 +39,4 @@
     </a>
   {{ end }}
 </div>
+{{ end }}

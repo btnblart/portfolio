@@ -252,3 +252,20 @@ a, .tag-link {
 
 
 }
+∑∑∑
+/* 記事内の画像サイズを整える */
+.content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* ギャラリー用の画像調整（必要なら） */
+.gallery img {
+  max-width: 300px;   /* 好きなサイズに調整 */
+  height: auto;
+  object-fit: cover;
+  margin: 0.5rem;
+}
+

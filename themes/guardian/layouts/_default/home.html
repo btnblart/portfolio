@@ -10,7 +10,7 @@
              {{ with .Params.tags }}
                data-tags="{{ delimit . ", " }}"
              {{ end }}>
-          
+
           <!-- Lightbox 用リンク -->
           <a href="{{ .Params.thumbnail }}" data-lightbox="gallery" data-title="{{ .Title }}">
             <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">

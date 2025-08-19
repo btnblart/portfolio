@@ -1,0 +1,46 @@
+{{ define "main" }}
+  <main>
+    <h1>タグ: {{ .Title }}</h1>
+
+    <div class="gallery-wrapper">
+      <div class="gallery">
+        {{ range .Pages }}
+        <div class="thumbnail"
+          data-title="{{ .Title }}"
+          data-date="{{ .Date.Format "2006-01-02" }}"
+          {{ with .Params.tags }}data-tags="{{ delimit . ", " }}"{{ end }}>
+
+          <!-- サムネイル -->
+          <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
+
+          <!-- Lightbox 用に隠しデータを置く -->
+          <div class="hidden-content" style="display:none">
+            <h2>{{ .Title }}</h2>
+            <div class="article-body">
+              {{ .Content }}
+            </div>
+
+            {{ with .Params.tags }}
+              <div class="tags">
+                {{ range . }}
+                  <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag-link">#{{ . }}</a>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+
+    <!-- 全タグクラウド -->
+    <div class="tag-cloud">
+      <h2>タグ一覧</h2>
+      <div class="tags">
+        {{ range .Site.Taxonomies.tags }}
+          <a href="{{ .Page.RelPermalink }}" class="tag-link">#{{ .Page.Title }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </main>
+{{ end }}

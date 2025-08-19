@@ -19,7 +19,7 @@
     <div class="article-body">
     
     </div>
-    
+
   {{ with .Params.tags }}
     <div class="tags">
       {{ range . }}
@@ -32,4 +32,26 @@
       {{ end }}
     </div>
   </div>
+{{ $max := 1 }}
+{{ range $name, $taxonomy := site.Taxonomies.tags }}
+  {{ if gt (len $taxonomy) $max }}
+    {{ $max = len $taxonomy }}
+  {{ end }}
+{{ end }}
+
+{{ range $name, $taxonomy := site.Taxonomies.tags }}
+  {{ $count := len $taxonomy }}
+  {{ $ratio := div $count $max }}
+
+  {{/* フォントサイズを 0.9rem 〜 1.6rem の間に収める */}}
+  {{ $size := add 0.9 (mul $ratio 0.7) }}
+
+  <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" 
+     class="tag-link"
+     style="font-size: {{ printf "%.2f" $size }}rem">
+    #{{ $name }}
+  </a>
+{{ end }}
+
+  
 {{ end }}

@@ -73,6 +73,9 @@ body[data-theme="night"] .lightbox-content {
   color: #eee;
 }
 
+a {
+  text-decoration: none;
+}
 
 a, .tag-link {
   color: var(--link-color);
@@ -262,4 +265,29 @@ a, .tag-link {
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.5em;
   font-size: 0.85rem;
+}
+
+.tags .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+.tags .tag-link {
+  display: inline-block;
+  background: #eee;
+  color: #333;
+  padding: 0.2em 0.6em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.5em;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: transform 0.2s, background 0.2s, color 0.2s;
+}
+
+.tags .tag-link:hover {
+  transform: scale(1.2);
+  background: #7e7178;
+  color: #fff;
 }

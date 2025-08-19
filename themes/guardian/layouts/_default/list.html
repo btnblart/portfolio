@@ -1,15 +1,30 @@
 {{ define "main" }}
-<section class="content">
-  <h1>{{ .Title }}</h1>
-  <ul>
-    {{ range .Pages }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <div class="summary">
-          {{ .Summary }}
+  <div class="gallery-wrapper">
+    <div class="gallery">
+      {{ range .Pages }}
+        <div class="thumbnail"
+             data-title="{{ .Title }}"
+             data-date="{{ .Date.Format "2006-01-02" }}"
+             {{ with .Params.tags }}data-tags="{{ delimit . ", " }}"{{ end }}>
+          
+          <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
+          
+          <div class="hidden-content" style="display:none">
+            <h2>{{ .Title }}</h2>
+            <div class="post-body">
+              
+            </div>
+
+            {{ with .Params.tags }}
+              <div class="tags">
+                {{ range . }}
+                  <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag-link">#{{ . }}</a>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
         </div>
-      </li>
-    {{ end }}
-  </ul>
-</section>
+      {{ end }}
+    </div>
+  </div>
 {{ end }}

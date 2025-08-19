@@ -65,21 +65,33 @@ document.addEventListener("DOMContentLoaded", () => {
   const lightbox = document.getElementById("lightbox");
   const content = lightbox.querySelector(".lightbox-content");
 
-  // サムネイル画像クリックで発火
-  document.querySelectorAll(".thumbnail img").forEach(img => {
-    img.addEventListener("click", e => {
-      e.stopPropagation(); // ← ネストクリック防止
+// サムネイル画像クリックで発火
+document.querySelectorAll(".thumbnail").forEach(thumb => {
+  const img = thumb.querySelector("img");
+  const hidden = thumb.querySelector(".hidden-content");
 
-      // Lightbox に画像だけ表示
-      content.innerHTML = `<img src="${img.src}" alt="${img.alt}" style="max-width:90vw; max-height:90vh;">`;
+  img.addEventListener("click", e => {
+    e.stopPropagation(); // ネストクリック防止
 
-      lightbox.classList.add("show");
-    });
+    let html = "";
+    // 画像
+    html += `<img src="${img.src}" alt="${img.alt}" style="max-width:90vw; max-height:60vh; margin-bottom:1rem;">`;
+
+    // hidden-content（本文やタグ）も追加
+    if (hidden) {
+      html += hidden.innerHTML;
+    }
+
+    content.innerHTML = html;
+    lightbox.classList.add("show");
   });
+});
 
-  // 背景クリックで閉じる
-  lightbox.addEventListener("click", () => {
+// 背景クリックで閉じる
+lightbox.addEventListener("click", e => {
+  if (e.target === lightbox) { // ← 背景クリックだけで閉じる
     lightbox.classList.remove("show");
     content.innerHTML = "";
-  });
+  }
+});
 });

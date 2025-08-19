@@ -4,22 +4,31 @@
   <div class="gallery-wrapper">
     <div class="gallery">
       {{ range site.RegularPages }}
-        <div class="thumbnail"
-             data-title="{{ .Title }}"
-             data-date="{{ .Date.Format "2006-01-02" }}"
-             {{ with .Params.tags }}
-               data-tags="{{ delimit . ", " }}"
-             {{ end }}>
+      <div class="thumbnail"
+     data-title="{{ .Title }}"
+     data-date="{{ .Date.Format "2006-01-02" }}"
+     {{ with .Params.tags }}data-tags="{{ delimit . ", " }}"{{ end }}>
 
-          <!-- サムネイル画像 -->
-          <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
+  <!-- サムネイル -->
+  <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
+  
 
-          <!-- 隠し本文（Lightboxに出す用） -->
-          <div class="hidden-content" style="display:none">
-            <h2>{{ .Title }}</h2>
-            {{ .Content }}
-          </div>
-        </div>
+  <!-- Lightbox 用に隠しデータを置く -->
+  <div class="hidden-content" style="display:none">
+    <h2>{{ .Title }}</h2>
+    <div class="article-body">
+    
+    </div>
+    
+  {{ with .Params.tags }}
+    <div class="tags">
+      {{ range . }}
+        <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag-link">#{{ . }}</a>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>
+</div>
       {{ end }}
     </div>
   </div>

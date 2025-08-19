@@ -48,3 +48,38 @@ document.addEventListener("DOMContentLoaded", function () {
     lightbox.classList.remove('show');
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hour = new Date().getHours();
+  let bg = "images/g001.png"; // デフォルトは昼用
+
+  if (hour >= 18 || hour < 6) {
+    // 夜（18時〜翌朝6時未満）
+    bg = "images/g002.png";
+  }
+
+  document.body.style.backgroundImage = `url('/${bg}')`;
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const lightbox = document.getElementById("lightbox");
+  const content = lightbox.querySelector(".lightbox-content");
+
+  // サムネイル画像クリックで発火
+  document.querySelectorAll(".thumbnail img").forEach(img => {
+    img.addEventListener("click", e => {
+      e.stopPropagation(); // ← ネストクリック防止
+
+      // Lightbox に画像だけ表示
+      content.innerHTML = `<img src="${img.src}" alt="${img.alt}" style="max-width:90vw; max-height:90vh;">`;
+
+      lightbox.classList.add("show");
+    });
+  });
+
+  // 背景クリックで閉じる
+  lightbox.addEventListener("click", () => {
+    lightbox.classList.remove("show");
+    content.innerHTML = "";
+  });
+});

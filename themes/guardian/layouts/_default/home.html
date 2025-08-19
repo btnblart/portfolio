@@ -1,22 +1,27 @@
 {{ define "main" }}
- 
   {{ .Content }}
 
   <div class="gallery-wrapper">
-  <div class="gallery">
-  {{ range site.RegularPages }}
-    <div class="thumbnail"
-         data-title="{{ .Title }}"
-         data-date="{{ .Date.Format "2006-01-02" }}"
-         {{ with .Params.tags }}
-           data-tags="{{ delimit . ", " }}"
-         {{ end }}>
-      <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
-      <div class="hidden-content" style="display:none">
-        {{ .Content }}
-      </div>
-    </div>
-  {{ end }}
+    <div class="gallery">
+      {{ range site.RegularPages }}
+        <div class="thumbnail"
+             data-title="{{ .Title }}"
+             data-date="{{ .Date.Format "2006-01-02" }}"
+             {{ with .Params.tags }}
+               data-tags="{{ delimit . ", " }}"
+             {{ end }}>
+          
+          <!-- Lightbox 用リンク -->
+          <a href="{{ .Params.thumbnail }}" data-lightbox="gallery" data-title="{{ .Title }}">
+            <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
+          </a>
+
+          <!-- 本文は別で保持 -->
+          <div class="hidden-content" style="display:none">
+            {{ .Content }}
+          </div>
+        </div>
+      {{ end }}
     </div>
   </div>
 {{ end }}

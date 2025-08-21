@@ -3,55 +3,70 @@
 
   <div class="gallery-wrapper">
     <div class="gallery">
-      {{ range site.RegularPages }}
-      <div class="thumbnail"
-     data-title="{{ .Title }}"
-     data-date="{{ .Date.Format "2006-01-02" }}"
-     {{ with .Params.tags }}data-tags="{{ delimit . ", " }}"{{ end }}>
+      {{ $paginator := .Paginate site.RegularPages }}
+      {{ range $paginator.Pages }}
+        <div class="thumbnail"
+             data-title="{{ .Title }}"
+             data-date="{{ .Date.Format "2006-01-02" }}"
+             {{ with .Params.tags }}data-tags="{{ delimit . ", " }}"{{ end }}>
 
-  <!-- サムネイル -->
-  <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
-  
+          <!-- サムネイル -->
+          <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
 
-  <!-- Lightbox 用に隠しデータを置く -->
-  <div class="hidden-content" style="display:none">
-    <h2>{{ .Title }}</h2>
-    <div class="article-body">
-    
-    </div>
+          <!-- Lightbox 用に隠しデータを置く -->
+          <div class="hidden-content" style="display:none">
+            <h2>{{ .Title }}</h2>
+            <div class="article-body"></div>
 
-  {{ with .Params.tags }}
-    <div class="tags">
-      {{ range . }}
-        <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag-link">#{{ . }}</a>
-      {{ end }}
-    </div>
-  {{ end }}
-</div>
-</div>
+            {{ with .Params.tags }}
+              <div class="tags">
+                {{ range . }}
+                  <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag-link">#{{ . }}</a>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+        </div>
       {{ end }}
     </div>
   </div>
-{{ $max := 1 }}
-{{ range $name, $taxonomy := site.Taxonomies.tags }}
-  {{ if gt (len $taxonomy) $max }}
-    {{ $max = len $taxonomy }}
+
+  <!-- ページ送りナビゲーション -->
+  <nav class="pagination">
+    {{ if $paginator.HasPrev }}
+      <a href="{{ $paginator.Prev.URL }}">← Prev</a>
+    {{ end }}
+
+    {{ range $paginator.Pagers }}
+      {{ if eq .PageNumber $paginator.PageNumber }}
+        <span class="current">{{ .PageNumber }}</span>
+      {{ else }}
+        <a href="{{ .URL }}">{{ .PageNumber }}</a>
+      {{ end }}
+    {{ end }}
+
+    {{ if $paginator.HasNext }}
+      <a href="{{ $paginator.Next.URL }}">Next →</a>
+    {{ end }}
+  </nav>
+
+  <!-- タグクラウド -->
+  {{ $max := 1 }}
+  {{ range $name, $taxonomy := site.Taxonomies.tags }}
+    {{ if gt (len $taxonomy) $max }}
+      {{ $max = len $taxonomy }}
+    {{ end }}
   {{ end }}
-{{ end }}
 
-{{ range $name, $taxonomy := site.Taxonomies.tags }}
-  {{ $count := len $taxonomy }}
-  {{ $ratio := div $count $max }}
+  {{ range $name, $taxonomy := site.Taxonomies.tags }}
+    {{ $count := len $taxonomy }}
+    {{ $ratio := div $count $max }}
+    {{ $size := add 0.9 (mul $ratio 0.7) }}
 
-  {{/* フォントサイズを 0.9rem 〜 1.6rem の間に収める */}}
-  {{ $size := add 0.9 (mul $ratio 0.7) }}
-
-  <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" 
-     class="tag-link"
-     style="font-size: {{ printf "%.2f" $size }}rem">
-    #{{ $name }}
-  </a>
-{{ end }}
-
-  
+    <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" 
+       class="tag-link"
+       style="font-size: {{ printf "%.2f" $size }}rem">
+      #{{ $name }}
+    </a>
+  {{ end }}
 {{ end }}

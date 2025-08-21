@@ -25,3 +25,4 @@ enableRobotsTXT = true
   tag = "tags"
   category = "categories"
 
+paginate = 10

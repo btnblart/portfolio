@@ -95,3 +95,4 @@ lightbox.addEventListener("click", e => {
   }
 });
 });
+

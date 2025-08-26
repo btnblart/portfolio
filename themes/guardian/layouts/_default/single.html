@@ -1,14 +1,9 @@
 {{ define "main" }}
-<article>
-  <h1>{{ .Title }}</h1>
-  <div class="content">
-    {{ range .Resources.ByType "image" }}
-      <a href="{{ .RelPermalink }}" data-lightbox="post" data-title="{{ $.Plain }}">
-        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}">
-      </a>
-    {{ end }}
-
-    {{ .Content }}
-  </div>
-</article>
+  <article>
+    <h1>{{ .Title }}</h1>
+    <div class="content">
+      {{ .Content }}
+    </div>
+  </article>
+  
 {{ end }}

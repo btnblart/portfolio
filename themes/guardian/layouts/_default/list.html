@@ -11,10 +11,10 @@
              {{ with .Params.tags }}data-tags="{{ delimit . ", " }}"{{ end }}>
           <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
 
-          <div class="hidden-content" style="display:none">
+         <div class="hidden-content" style="display:none">
             <h2>{{ .Title }}</h2>
             <div class="post-body"></div>
-
+ 
             {{ with .Params.tags }}
               <div class="tags">
                 {{ range . }}

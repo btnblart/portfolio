@@ -1,4 +1,4 @@
-baseURL = "https://btnb.netlify.app/" # ←あなたのURLに変更してOK
+baseURL = "https://art.btnb.jp" # ←あなたのURLに変更してOK
 languageCode = "ja"
 title = "btnb/portfolio"
 theme = "guardian"
